@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="./index.css">
+  <title>Star Wars</title>
+</head>
+<body class="container">
+  
+  <header class="text-center pt-5">
+    <a href="https://swapi.dev/">
+        <img src="https://fontmeme.com/permalink/210514/fc0399423d9ec1dff56ba6f4062368b1.png" alt="star-wars-font" border="0">
+    </a>
+  </header>
+<form id="form-buttons">
+
+  <div class="input-group mb-3 mt-5 buttons" data-toggle="buttons">
+    <!-- <button class="btn btn-outline-secondary search-btn search-button" type="button" id="button-addon1">Search</button> -->
+  <input type="text" id="text-value" class="form-control" placeholder="Type a name and click on the correspondent button below to search" aria-label="Example text with button addon" aria-describedby="button-addon1">
+    
+  </div>
+ <!-- Radio group -->
+ <div id="btn-radio-group" class="btn-group" role="group" aria-label="Basic radio toggle button group">  
+  <div class="form-check form-check-inline">
+    <label class="btn btn-lg btn-outline-light form-check-label " for="inlineRadio1">People</label>
+    <!-- <input class="form-check-input buttons" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="people"> -->
+  </div>
+
+<div class="form-check form-check-inline">
+  <label class="btn btn-lg btn-outline-light form-check-label" for="inlineRadio2">Planets</label>
+  <!-- <input class="form-check-input buttons" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="planets"> -->
+</div>
+
+<div class="form-check form-check-inline">
+  <label class="btn btn-lg btn-outline-light form-check-label" for="inlineRadio3">Films</label>
+  <!-- <input class="form-check-input buttons" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="films"> -->
+</div>  
+
+<div class="form-check form-check-inline">
+  <label class="btn btn-lg btn-outline-light form-check-label" for="inlineRadio4">Species</label>
+  <!-- <input class="form-check-input buttons" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="species"> -->
+</div>  
+
+<div class="form-check form-check-inline">
+  <label class="btn btn-lg btn-outline-light form-check-label" for="inlineRadio5">Vehicles</label>
+  <!-- <input class="form-check-input buttons" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="vehicles"> -->
+</div>  
+
+<div class="form-check form-check-inline">
+  <label class="btn btn-lg btn-outline-light form-check-label" for="inlineRadio6">Starships</label>
+  <!-- <input class="form-check-input buttons" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="starships"> -->
+</div>  
+</div>
+</form>
+
+  <div id="results" class="card-columns"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+  <!-- <script src="./main.js"></script> -->
+</body>
+</html>
